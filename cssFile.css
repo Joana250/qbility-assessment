@@ -1,0 +1,61 @@
+body{
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.question{
+	font-weight: 600;
+    margin-bottom: 8px;
+}
+.answers {
+  margin-bottom: 20px;
+}
+#submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #279;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#submit:hover{
+	background-color: #38a;
+}
+
+.login {
+	margin: auto;
+
+}
+.header div {
+	text-align: center;
+	color: rgb(127, 201, 43);
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.login-name {
+	width: 250px;
+	border-radius: 2px;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.login-btn {
+	width: 250px;
+	background: rgb(120, 173, 95);
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 8px;
+	margin-top: 12px;
+}
