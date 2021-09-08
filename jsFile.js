@@ -66,11 +66,10 @@ const userAnswers = {};
        //console.log('Para bens voce esta acima! gutten tag', averageDiff * -1);
        answersToDisplay.push(
         `<label>
-          "You are above the average with ${averageDiff} points"  
+          "You are above the average with ${averageDiff * -1} points"  
         </label>`
       );
      } else {
-       //console.log('Infelizmente abaixo');
        answersToDisplay.push(
         `<label>
           "You are below the average with ${averageDiff} points"  
@@ -84,7 +83,7 @@ const userAnswers = {};
   
     });
 
-
+  const nameLogin = document.getElementById('yourname').value;
   userAnswers['User'] = nameLogin;
   
   await fetch('http://localhost:3000/save-answers', {
@@ -96,7 +95,7 @@ const userAnswers = {};
     body: JSON.stringify(userAnswers)
   });
     
-    quizAnswers.innerHTML = outputAnswers.join('');
+  showAnswers.innerHTML = outputAnswers.join('');
   }
 
 
@@ -165,13 +164,15 @@ const myQuestions = [
 
 // elementos da DOM
 const quizContainer = document.getElementById('quiz');
-const quizAnswers = document.getElementsByClassName('quiz-answers')[0];
+const showAnswers = document.getElementById('answers');
+const quizAnswers = document.getElementById('quiz-answers');
 const quizContainerAll = document.getElementsByClassName('quiz-container')[0];
 const submitButton = document.getElementById('submit');
 const resetButton = document.getElementById('restart');
+const resetButtonFinal = document.getElementById('restartFinal');
 const startButton = document.getElementById('start');
 const loginContainer = document.getElementsByClassName('login')[0];
-const nameLogin = document.getElementById('yourname').value;
+
 
 // display quiz 
 //buildQuiz();
@@ -180,3 +181,4 @@ const nameLogin = document.getElementById('yourname').value;
 submitButton.addEventListener('click', showResults);
 resetButton.addEventListener('click',restartQuizz);
 startButton.addEventListener('click',buildQuiz);
+resetButtonFinal.addEventListener('click',restartQuizz);

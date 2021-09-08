@@ -1,0 +1,70 @@
+
+
+<html>
+
+<head>
+<style>
+    .login{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+            
+    }
+    .header div{
+                text-align: center;
+                color: rgb(127, 201, 43);
+                font-size: 20px;
+                font-weight: 200;
+            }
+
+    .login input [type=text]{
+                width: 250px;
+                height: 30px;
+                border-radius: 2px;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 4px;
+    }
+    .login input [type=button]{
+                width: 100px;
+                height: 35px;
+                background: rgb(120, 173, 95);
+                cursor: pointer;
+                border-radius: 2px;
+                color: silver;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 6px;
+                margin-top: 10px;
+            }
+</style>
+</head>
+<script type="text/javascript"> 
+function saveName(form)
+{
+    if(form.yourname.value == "Joana"){
+        alert("Meu Nome")
+    }
+    else{
+        alert("Outro nome")
+    }
+}       
+    </script>
+<body>
+
+<form name="login">
+    <div class="login">
+        <div class="header">
+            <div>Enter your name</div>
+        </div>
+        <input type="text" id="yourname" name="yourname"><br>
+        <input typo="button" onclick="saveName(this.form)" value="Start Assessment"></button>
+    </div>
+</form>
+
+</body>
+
+
+</html>
+
