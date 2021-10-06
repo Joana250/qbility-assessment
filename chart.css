@@ -1,0 +1,105 @@
+/* body
+{
+     align-items: center; 
+
+} */
+
+/*  .container {
+    background: black;
+    display: inline-block;
+    place-self: center;
+    border: 2px solid black;
+    
+}  */
+
+.container1 {
+  background: black;
+  
+ width: 50%;
+  border: 2px solid black;
+  
+} 
+
+.container2 {
+  background: rgb(80, 39, 39);
+  width: 50%;
+
+  border: 2px solid black;
+  float: right;
+} 
+
+
+
+/*   .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
+    grid-template-rows: repeat(1, 700px); 
+    grid-gap: 2px;
+  }
+ */
+  .grid1 {
+    display: grid;
+    grid-template-columns: repeat(1, 700px);
+    grid-template-rows: repeat(1, 700px); 
+    grid-gap: 2px;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(1, 700px);
+    grid-template-rows: repeat(1, 700px); 
+    grid-gap: 2px;
+    float: right;
+  }
+/*   .cell {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: white;
+  }  */
+
+  .cell1 {
+    width: 50%;
+    display: flex;
+    background: white;
+  } 
+
+  .cell2 {
+    width: 50%;
+    display: flex;
+    background: white;
+    float: right;
+  } 
+/* Split the screen in half */
+.split {
+  height: 50%;
+  width: 50%;
+  position: fixed;
+  /* z-index: 1; */
+  top: 100;
+  /* overflow-x: hidden;
+  padding-top: 20px; */
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%); 
+  text-align: center;
+  }
+

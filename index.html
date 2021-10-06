@@ -1,16 +1,23 @@
 <html>
     <head>
-        <title>Qbility Assessement - Quality Management 4.0 Maturity</title>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <title>Qbility Assessment - Qualit&#228t 4.0 Reifegradmodell</title>
         <link rel="stylesheet" href="cssFile.css"/>
 
     </head>
 
-    <body>
-        <h1>Qbility Assessement - Quality Management 4.0 Maturity</h1>
-
+    <body id="body">
+        <div id="title">
+            <h1>Qbility Assessment - Qualit&#228t 4.0 Reifegradmodell</h1>
+        </div>
+        
         <div class="login" name="login">
             <div class="header">
-                <div>Enter your name</div>
+                <div>Enter company name</div>
             </div>
             <input class="login-name" type="text" id="yourname" name="yourname"><br>
             <button class="login-btn" id="start">Start Assessment</button>
@@ -22,13 +29,37 @@
             <button type="submit" id="submit">Submit Quiz</button><br>
             <button type="reset" id="restart">Restart Quiz</button>
         </div>
-        
-        <div id="quiz-answers" class="quiz-answers" style="display: none;">
-            <div id="answers"></div>
+
+<!--         <div id="graph-answers" class="centered" style="display: none;"> 
+            <h2 style="color :rgb(23, 156, 125); ">Planungs- und Konzeptionsphase </h2>
+            <canvas id="answerChartPlanung"></canvas>
+            <button id="pdfButton">Generate PDF</button><br>
             <button type="reset" id="restartFinal">Restart Quiz</button>
+            
+        </div> -->
+
+
+        <div id="graph-answers" class="centered" style="display: none;"> 
+            <div class="split" > 
+                <div>
+                    <h2 class="subtitle">Auswertung </h2>
+                    <canvas id="answerChartPlanung" width="500" height="500" style="display: block; box-sizing: border-box;height: 500px;width: 500px;" ></canvas><br>
+                </div>
+                <div>
+                    <h2 class="subtitle">Handlungsempfehlungen
+                    </h2>
+                    <p>Defizit bei der Digitalisierung im Bereich der Produktion</p><br>
+                    <p>Handlungsempfehlung: Integration eines MES, um Fortschritte zu erzielen</p>
+                        
+                </div>
+            </div>
+            <button id="pdfButton">Generate PDF</button><br>
+            <button type="reset" id="restartFinal">Restart Quiz</button>
+            
         </div>
 
     </body>
 
-    <script src="jsFile.js"></script>
+    <script  src="jsFile.js"></script>
+    <link rel="stylesheet" href="cssFile.css"/>
 </html>
