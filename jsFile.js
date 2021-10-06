@@ -212,12 +212,12 @@ const myQuestions = [
   
   // for each chart.js chart
   $("canvas").each(function(index) {
-    // get the chart height/width
-    // var canvasHeight = $(this).innerHeight();
-    // var canvasWidth = $(this).innerWidth();
+    
+     var canvasHeight = $(this).innerHeight();
+     var canvasWidth = $(this).innerWidth();
 
-    var canvasHeight = 500;
-    var canvasWidth = 500;
+    // var canvasHeight = 500;
+    // var canvasWidth = 500;
     
     // draw the chart into the new canvas
     pdfctx.drawImage($(this)[0], pdfctxX, pdfctxY, canvasWidth, canvasHeight);
@@ -225,10 +225,10 @@ const myQuestions = [
     pdfctxY = canvasHeight;
     
     // our report page is in a grid pattern so replicate that in the new canvas
- /*    if (index % 2 === 1) {
+     if (index % 2 === 1) {
       pdfctxX = 0;
       pdfctxY = canvasHeight;
-    } */ 
+    }  
   });
   
   // create new pdf and add our new canvas as an image
@@ -236,7 +236,7 @@ const myQuestions = [
   pdf.addImage($(pdfCanvas)[0], 'PNG', 0, 0);
   
   // download the pdf
-  pdf.save('filename.pdf');
+  pdf.save('Auswertung.pdf');
 }); 
 
 
