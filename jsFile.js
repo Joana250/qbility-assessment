@@ -88,7 +88,7 @@ function buildGraph(userAnswers, userName){
     },
     {
       label: 'MittelWert',
-      data: [4, 4, 2, 5, 4],
+      data: [4, 4, 2, 5, 3],
       fill: false,
       backgroundColor: 'rgba(41, 241, 195, 1)',
       borderColor: 'rgb(41, 241, 195)',
