@@ -77,7 +77,7 @@ function buildGraph(userAnswers, userName){
       pointHoverBorderColor: 'rgb(255, 99, 132)'
     }, {
       label: 'Max Wert',
-      data: [4, 3, 3, 5, 3],
+      data: [5, 4, 3, 5, 4],
       fill: false,
       backgroundColor: 'rgba(54, 162, 235, 0.2)',
       borderColor: 'rgb(54, 162, 235)',
@@ -88,7 +88,7 @@ function buildGraph(userAnswers, userName){
     },
     {
       label: 'MittelWert',
-      data: [3, 3, 2, 5, 2],
+      data: [4, 4, 2, 5, 4],
       fill: false,
       backgroundColor: 'rgba(41, 241, 195, 1)',
       borderColor: 'rgb(41, 241, 195)',
